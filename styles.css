@@ -263,7 +263,7 @@ nav ul li a:hover::after{
     position: absolute;
     left: 0;
     bottom: 0;
-    overflow: hidden;
+    overflow:scroll;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,6 +272,7 @@ nav ul li a:hover::after{
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
+
 }
 
 .layer h3{
