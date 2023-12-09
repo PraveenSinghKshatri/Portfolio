@@ -263,7 +263,7 @@ nav ul li a:hover::after{
     position: absolute;
     left: 0;
     bottom: 0;
-    overflow:scroll;
+    overflow:hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -369,7 +369,8 @@ nav ul li a:hover::after{
 .btn.btn2{
     display: inline-block;
     background: #ff004f;
-
+    width: fit-content;
+    padding: 5px 10px;
     color: #fff;
 }
 
