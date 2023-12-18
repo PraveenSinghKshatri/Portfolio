@@ -100,11 +100,20 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 auto;
 
 }
 
 .about-col-1{
+    background-image: url(images/ps-PhotoRoom.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
     flex-basis: 35%;
+    border-radius: 50%;
+    width: 100%;
+    min-width: 150px;
+    height: 400px;
 
 }
 
@@ -395,7 +404,9 @@ nav ul li a:hover::after{
 
 }
 
-
+abbr{
+    text-decoration: none;
+}
 
 .btn.btn2{
     display: inline-block;
@@ -437,7 +448,7 @@ form .btn2:hover{
     transform: translateY(-5px);
 }
 
-.coopyright{
+.copyright{
     width: 100%;
     text-align: center;
     padding: 25px 0;
@@ -447,11 +458,11 @@ form .btn2:hover{
 
 }
 
-.coopyright i{
+.copyright i{
     color: #ff004f;
 }
 
-.coopyright i:hover{
+.copyright i:hover{
     color: #ff004f;
     transform: scale(1.1);
     cursor: pointer;
@@ -479,6 +490,12 @@ nav .fa-solid{
     .header-text h1{
         font-size: 30px;
 
+    }
+
+    .about-col-1 {
+        background-image: url(images/small.jpg);
+        background-size: cover;
+        border-radius: 100%;
     }
 
     nav .fa-solid{
@@ -534,11 +551,18 @@ nav .fa-solid{
         margin-right: 20px;
     }
 
+    .work-list{
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        width: 100p%;
+        height: 100%;
+
+    }
+
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
 
-    .coopyright{
+    .copyright{
         font-size: 14px;
     }
 
