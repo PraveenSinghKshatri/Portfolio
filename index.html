@@ -199,9 +199,7 @@
     </div>
 
     <div class="copyright">
-        <p>Copyright &copy; <script>
-            document.write(new Date().getFullYear())
-          </script> Praveen Singh. Made with <i class="fa-solid fa-beat fa-heart"></i> Love </p>
+        <p>Copyright &copy; <span id="copyright-year"></span> Praveen Singh. Made with <i class="fa-solid fa-beat fa-heart"></i> Love </p>
     </div>
 
 </div>
@@ -234,6 +232,15 @@
             sidemenu.style.right = "-200px";
         }
     </script>
+
+<script>
+    // JavaScript to display the range of years in the copyright notice
+    const copyrightYearElement = document.getElementById('copyright-year');
+    const startYear = 2023;
+    const currentYear = new Date().getFullYear();
+    const yearRange = (startYear === currentYear) ? currentYear : `${startYear} - ${currentYear}`;
+    copyrightYearElement.textContent = yearRange;
+</script>
 
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxBtYdyxe1j8yxREX560lbptvHOs5F_KMiR0D0FEPCPE4_JrK19NnXpvsVsgsd_pdM-4Q/exec'
