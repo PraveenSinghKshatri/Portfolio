@@ -13,7 +13,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/PhotoRoom.jpg);
+    background-image: url(images/header_ga.jpeg);
     background-size: cover;
     background-position: center;
     
@@ -40,7 +40,7 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-    
+       
 
 }
 
@@ -48,6 +48,7 @@ nav ul li a{
     text-decoration: none; 
     font-size: 18px;
     color: #fff;
+    text-shadow: 1px 1px 1px #000;  
     position: relative;
     right: 0;
 }
@@ -68,15 +69,20 @@ nav ul li a:hover::after{
 
 }
 
-.header-text{
-    margin-top: 20%;
+.header-text p{
+    margin-top: 20px;
     font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
+
 }
 
 .header-text h1{
     font-size: 60px;
     margin-top: 10%;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
 
 }
 
@@ -91,7 +97,7 @@ nav ul li a:hover::after{
 
 #about{
     padding: 80px 0;
-    color: ababab;  
+    color: #ababab;  
   
 
 }
@@ -110,16 +116,16 @@ nav ul li a:hover::after{
     background-position: top;
     background-size: cover;
     flex-basis: 35%;
-    border-radius: 50%;
+    border-radius: 15px;
     width: 100%;
     min-width: 150px;
-    height: 400px;
+    height: 550px;
 
 }
 
 .about-col-1 img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
     
 }
 
@@ -477,25 +483,33 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/ps-PhotoRoom.jpg);
+        background-image: url(images/header_ga.jpeg);
     }
 
 
     .header-text{
-        margin-top: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
         font-size: 16px;
+        align-items: left;
+        justify-content: center;
+
+
 
     }
 
     .header-text h1{
         font-size: 30px;
+        margin-top: 100%;
+    
 
     }
 
     .about-col-1 {
-        background-image: url(images/small.jpg);
+        background-image: url(images/ps-PhotoRoom.jpg);
         background-size: cover;
-        border-radius: 100%;
+        border-radius: 10px;
     }
 
     nav .fa-solid{
