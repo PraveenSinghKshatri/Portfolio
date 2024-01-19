@@ -31,8 +31,8 @@ nav{
 }
 
 .logo{
-    width: 140px;
-    filter: drop-shadow(5px 5px 5px #555);
+    width: 80px;
+    filter: drop-shadow(5px 5px 5px #000);
     
 }
 
@@ -70,7 +70,7 @@ nav ul li a:hover::after{
 }
 
 .header-text p{
-    margin-top: 20px;
+    margin-top: 10%;
     font-size: 30px;
     color: #fff;
     text-shadow: 2px 2px 1px #000;
@@ -79,16 +79,15 @@ nav ul li a:hover::after{
 
 .header-text h1{
     font-size: 60px;
-    margin-top: 10%;
-    margin-bottom: 5%;
     color: #fff;
     text-shadow: 2px 2px 1px #000;
+    margin-top: 2.5%;
 
 }
 
 
 
-.header-text h1 span{
+.header-text span{
    color: #ff004f;
 
 }
@@ -128,7 +127,12 @@ nav ul li a:hover::after{
     border-radius: 10px;
     
 }
-
+.about-col-1:hover{
+    background-image: url(images/ps.jpg);
+    transition: 1ms;
+    
+    
+}
 .about-col-2{
     flex-basis: 60%;
     
@@ -484,27 +488,31 @@ nav .fa-solid{
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(images/header_ga.jpeg);
+       
+
     }
 
 
-    .header-text{
-        display: flex;
-        flex-direction: column;
+    .header-text {
         margin: 0 auto;
-        font-size: 16px;
+        display: flex;
+        font-size: 15px;
+        flex-direction: column;
         align-items: left;
         justify-content: center;
-
-
+        margin-top: 90%;
+       
 
     }
 
     .header-text h1{
-        font-size: 30px;
-        margin-top: 100%;
-    
+        font-size: 30px;  
+        margin-top: 5%;
+
 
     }
+
+    
 
     .about-col-1 {
         background-image: url(images/ps-PhotoRoom.jpg);
