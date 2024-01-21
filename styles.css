@@ -13,7 +13,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/header_ga.jpeg);
+    background-image: url(images/Thumbnail.jpg);
     background-size: cover;
     background-position: center;
     
@@ -28,18 +28,17 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: rgba(0,0,0,0.6);
+
 }
 
-.logo{
-    width: 80px;
-    filter: drop-shadow(5px 5px 5px #000);
-    
-}
 
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    filter: drop-shadow(5px 5px 15px #111);
+
        
 
 }
@@ -48,7 +47,7 @@ nav ul li a{
     text-decoration: none; 
     font-size: 18px;
     color: #fff;
-    text-shadow: 1px 1px 1px #000;  
+    text-shadow: 0px 0px 2px #111;  
     position: relative;
     right: 0;
 }
@@ -70,18 +69,28 @@ nav ul li a:hover::after{
 }
 
 .header-text p{
-    margin-top: 10%;
+    margin-top: 20%;
     font-size: 30px;
     color: #fff;
-    text-shadow: 2px 2px 1px #000;
+    background-color: rgba(0,0,0,0.6);
+    display: inline-block;
+    background-position: left;
+    background-clip: content-box;
+
 
 }
 
 .header-text h1{
+    display: inline-block;
     font-size: 60px;
     color: #fff;
     text-shadow: 2px 2px 1px #000;
-    margin-top: 2.5%;
+    margin-top: 15%;
+    background-color: rgba(0,0,0,0.6);
+    background-clip: content-box;
+
+   
+
 
 }
 
@@ -119,6 +128,7 @@ nav ul li a:hover::after{
     width: 100%;
     min-width: 150px;
     height: 550px;
+    margin-top: 10px;
 
 }
 
@@ -136,6 +146,11 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
     
+}
+
+.about-col-2 p{
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .sub-title{
@@ -487,8 +502,8 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/header_ga.jpeg);
-       
+        background-image: url(images/Thumbnail.jpg);
+        background-position-x: 100vh;
 
     }
 
@@ -501,7 +516,9 @@ nav .fa-solid{
         align-items: left;
         justify-content: center;
         margin-top: 90%;
-       
+        display: inline-block;
+        background-position: left;
+        background-clip: content-box;
 
     }
 
@@ -513,12 +530,12 @@ nav .fa-solid{
     }
 
     
-
     .about-col-1 {
         background-image: url(images/ps-PhotoRoom.jpg);
         background-size: cover;
         border-radius: 10px;
     }
+
 
     nav .fa-solid{
         display: block;
