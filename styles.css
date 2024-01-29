@@ -439,6 +439,7 @@ abbr{
     width: fit-content;
     padding: 5px 10px;
     color: #fff;
+    margin-bottom: 0;
 }
 
 .btn.btn2:hover{
@@ -446,7 +447,15 @@ abbr{
 
 }
 
+.downloads i{
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+}
+
 .contact-right form{
+    margin-top: 50px;
+    margin-bottom: 50px;
     width: 100%;
 }
 
